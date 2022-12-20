@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./SearchOptions.css"
+import DetailsBar from "./DetailsBar";
+
 
 function SearchOptions() {
+  const [active, setActive] = useState("false");
+
   return (
     <div className="sc-wrapper">
       <div className="sc-options">
@@ -60,13 +64,14 @@ function SearchOptions() {
                 <label htmlFor="#pdt">PDT</label>
             </form>
         </div>
-        <div className="middle">
-            <form>
-                <button type="submit" className="btn my-btn">Seach</button>
-            </form>
+        <div className="right">
+          <button onClick={() => setActive("true")} className="btn my-btn">Seach</button>
         </div>
       </div>
       <div className="line"></div>
+      <div>
+        {active === "true" && <DetailsBar />}
+      </div>
     </div>
   );
 }

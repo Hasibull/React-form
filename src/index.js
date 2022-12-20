@@ -5,6 +5,8 @@ import reportWebVitals from './reportWebVitals';
 import NavBar from './components/NavBar';
 import TagLine from './components/TagLine';
 import SearchOptions from './components/SearchOptions';
+import DetailsBar from "./components/DetailsBar";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +15,7 @@ root.render(
       <NavBar />
       <TagLine />
       <SearchOptions />
+      {/* <DetailsBar /> */}
     </React.Fragment>
   </React.StrictMode>
 );
