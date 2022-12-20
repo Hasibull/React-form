@@ -54,9 +54,9 @@ function SearchOptions() {
         <div className="middle">
             <form>
                 <label>Environment</label>
-                <input id="dummy" type="radio" />
+                <input id="dummy" name="env" type="radio" />
                 <label htmlFor="#dummy">Dummy</label>
-                <input id="pdt" type="radio" />
+                <input id="pdt" name="env" type="radio" />
                 <label htmlFor="#pdt">PDT</label>
             </form>
         </div>
